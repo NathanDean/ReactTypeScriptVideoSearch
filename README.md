@@ -1,6 +1,6 @@
 # React Video Search App
 
-Deployed to Heroku <a href = https://peaceful-atoll-49366.herokuapp.com/">here</a>.
+Deployed to Heroku <a href = "https://peaceful-atoll-49366.herokuapp.com/">here</a>.
 
 This app uses the YouTube API to retrieve video matching the query entered by the user.
 
