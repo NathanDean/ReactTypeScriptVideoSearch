@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+:root {
+    --offWhite: #FAFAFF;
+    --lightBlue: #A1D1De;
+    --darkBlue: #47A8BD;
+    --darkGrey: #30343F;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--darkBlue) var(--lightBlue);
+}
+
+body {
+    height: 100vh;
+    
+    background-color: var(--offWhite);
+
+    overflow: hidden;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+
+    color: var(--darkGrey);
+    font-family: "Outfit", sans-serif;
+    font-size: 1.15rem;
+    letter-spacing: .1rem;
+}
+
+.container {    
+    width: 90%;
+    height: 100%;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+.searchbar-container {
+    margin: 10px 0;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+.video-detail, .video-list {
+    width: 49%;
+}
+
+@media screen and (max-width: 1700px) {
+    
+    .video-detail {
+        width: 64%;
+    }
+
+    .video-list {
+        width: 34%;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+    
+    body {
+        height: auto;
+        overflow-y: auto;
+    }
+    
+    .video-container {
+        flex-direction: column;        
+    }
+
+    .video-detail, .video-list {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,16 @@
+.video-list {
+    height: 75%;
+    
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.video-list div:nth-of-type(1) {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1300px) {
+    .video-list {
+        overflow-y: visible;
+    }
+}

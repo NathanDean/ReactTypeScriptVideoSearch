@@ -1,0 +1,18 @@
+.video-item {
+    display: flex;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+.video-item * {
+    width: 50%;
+}
+
+.video-item div {
+    margin-left: 10px;
+}
+
+.item-title {    
+    width: 100%;
+}
