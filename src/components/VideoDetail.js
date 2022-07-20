@@ -5,11 +5,6 @@ import he from "he";
 
 class VideoDetail extends React.Component {
     
-    // onIframeLoad = () => {
-    //     const player = document.querySelector("iframe");
-    //     player.style.height = `${player.contentWindow.document.body.scrollHeight}px`;
-    // }
-    
     render(){
 
         const video = this.props.video;
@@ -38,7 +33,6 @@ class VideoDetail extends React.Component {
                     <iframe 
                         src = {videoSrc} 
                         frameBorder = "0"
-                        // onLoad = {this.onIframeLoad}
                     ></iframe>
 
                 </div>
