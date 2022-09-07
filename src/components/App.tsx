@@ -1,55 +1,12 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
+import { AxiosError } from "../../node_modules/axios/index";
 import SearchBar from "./SearchBar";
 import VideoDetail from "./VideoDetail";
 import VideoList from "./VideoList";
 import youtube from "../api/youtube";
+import type { Video, YouTubeResponse } from "../types";
 import "./App.css";
-import { AxiosError } from "../../node_modules/axios/index";
-
-interface Thumbnail {
-    height: number;
-    url: string;
-    width: number;
-}
-
-interface Video {
-    
-    etag: string;
-    id: {
-        kind: string;
-        videoId: string;
-    };
-    kind: string;
-    snippet: {
-        channelId: string;
-        channelTitle: string;
-        description: string;
-        liveBroadcastContent: string;
-        publishTime: string;
-        publishedAt: string;
-        thumbnails: {
-            default: Thumbnail;
-            high: Thumbnail;
-            medium: Thumbnail
-        };
-        title: string
-    }
-}
-
-interface YouTubeResponse {
-    data: {
-        etag: string;
-        items: Video[];
-        kind: string;
-        nextPageToken: string;
-        pageInfo: {
-            resultsPerPage: number;
-            totalResults: number
-        };
-        regionCode: string;
-    }
-}
 
 const App = () => {
 

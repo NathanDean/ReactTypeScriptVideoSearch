@@ -1,36 +1,7 @@
 import * as React from 'react'
 import VideoItem from './VideoItem';
 import "./VideoList.css";
-
-interface Thumbnail {
-    height: number;
-    url: string;
-    width: number;
-}
-
-interface Video {
-    
-    etag: string;
-    id: {
-        kind: string;
-        videoId: string;
-    };
-    kind: string;
-    snippet: {
-        channelId: string;
-        channelTitle: string;
-        description: string;
-        liveBroadcastContent: string;
-        publishTime: string;
-        publishedAt: string;
-        thumbnails: {
-            default: Thumbnail;
-            high: Thumbnail;
-            medium: Thumbnail
-        };
-        title: string
-    }
-}
+import type { Video } from "../types"
 
 const VideoList = ({videos, onVideoSelect}) => {
 
