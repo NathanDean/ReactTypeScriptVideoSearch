@@ -1,69 +1,33 @@
-import React, { useState } from "react";
-import "./SearchBar.css"
-
-const SearchBar = ({onSearchSubmit}) => {
-
+import * as React from "react";
+import { useState } from "react";
+import "./SearchBar.css";
+const SearchBar = ({ onSearchSubmit }) => {
     const [query, setQuery] = useState("");
-
-    const onFormSubmit = e => {
+    const onFormSubmit = (e) => {
         e.preventDefault();
-
         onSearchSubmit(query);
-    }
-
-    const onSearchChange = e => {
+    };
+    const onSearchChange = (e) => {
         setQuery(e.target.value);
-    }
-
-    return(
-
-        <div className = "searchbar-container">
-
-            <form 
-                action = ""
-                onSubmit = {onFormSubmit}
-            >
-                <input 
-                    type = "text" 
-                    placeholder = "Enter a search term"
-                    value = {query}
-                    onChange = {onSearchChange}
-                />
-
-            </form>
-
-        </div>
-    
-    )
-
-}
-
+    };
+    return (React.createElement("div", { className: "searchbar-container" },
+        React.createElement("form", { action: "", onSubmit: onFormSubmit },
+            React.createElement("input", { type: "text", placeholder: "Enter a search term", value: query, onChange: onSearchChange }))));
+};
 // class SearchBar extends React.Component {
-
 //     state = {
 //         query: ""
 //     }
-    
 //     onFormSubmit = event => {
-
 //         event.preventDefault();
-
 //         this.props.onSearchSubmit(this.state.query);
-
 //     }
-    
 //     onSearchChange = event => {
-
 //         this.setState({query: event.target.value})
-
 //     }
-    
 //     render(){
-    
 //         return(
-
 //             <div className = "searchbar-container">
-
 //                 <form 
 //                     action = ""
 //                     onSubmit = {this.onFormSubmit}
@@ -74,15 +38,10 @@ const SearchBar = ({onSearchSubmit}) => {
 //                         value = {this.state.query}
 //                         onChange = {this.onSearchChange}
 //                     />
-
 //                 </form>
-
 //             </div>
-        
 //         )
-
 //     }
-
 // }
-
-export default SearchBar
+export default SearchBar;
+//# sourceMappingURL=SearchBar.js.map
