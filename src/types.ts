@@ -41,21 +41,3 @@ export interface YouTubeResponse {
         regionCode: string;
     }
 }
-
-export interface SearchBarProps {
-    onSearchSubmit(query: string): void
-}
-
-export interface VideoDetailProps {
-    video: Video | null
-}
-
-export interface VideoListProps {
-    videos: Video[],
-    onVideoSelect(video: Video): void
-}
-
-export interface VideoItemProps {
-    video: Video,
-    onVideoSelect(video: Video): void
-}

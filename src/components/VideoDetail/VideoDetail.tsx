@@ -1,9 +1,11 @@
 import React from "react";
 import he from "he";
-import type { VideoDetailProps } from "../../types";
+import type { Video } from "../../types";
 import "./VideoDetail.css";
 
-
+export interface VideoDetailProps {
+    video: Video | null
+}
 
 const VideoDetail = ({video}: VideoDetailProps) => {
 

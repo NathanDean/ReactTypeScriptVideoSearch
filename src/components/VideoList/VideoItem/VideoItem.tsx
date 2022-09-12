@@ -1,7 +1,12 @@
 import React from "react";
 import he from "he";
-import { VideoItemProps } from "../../../types";
+import { Video } from "../../../types";
 import "./VideoItem.css";
+
+export interface VideoItemProps {
+    video: Video,
+    onVideoSelect(video: Video): void
+}
 
 const VideoItem = ({video, onVideoSelect}: VideoItemProps) => {
 
