@@ -1,10 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import SearchBarProps from "../../models/SearchBarProps";
 import "./SearchBar.css"
-
-export interface SearchBarProps {
-    onSearchSubmit(query: string): void
-}
 
 const SearchBar = ({onSearchSubmit}: SearchBarProps) => {
 

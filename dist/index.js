@@ -1,5 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from 'react-dom/client';
 import App from "./components/App";
-ReactDOM.render(React.createElement(App, null), document.querySelector("#root"));
+const root = createRoot(document.querySelector("#root"));
+root.render(React.createElement(React.StrictMode, null,
+    React.createElement(App, null)));
 //# sourceMappingURL=index.js.map

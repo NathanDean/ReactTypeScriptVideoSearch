@@ -5,7 +5,8 @@ import VideoDetail from "./VideoDetail/VideoDetail";
 import VideoList from "./VideoList/VideoList";
 import youtube from "../api/youtube";
 import type { AxiosError } from "../../node_modules/axios/index";
-import type { Video, YouTubeResponse } from "../models";
+import Video from "../models/Video";
+import YouTubeResponse from "../models/YouTubeResponse";
 import "./App.css";
 
 const App = () => {

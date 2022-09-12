@@ -1,10 +1,4 @@
-interface Thumbnail {
-    height: number;
-    url: string;
-    width: number;
-}
-
-export interface Video {
+export default interface Video {
     
     etag: string;
     id: {
@@ -25,19 +19,5 @@ export interface Video {
             medium: Thumbnail
         };
         title: string
-    }
-}
-
-export interface YouTubeResponse {
-    data: {
-        etag: string;
-        items: Video[];
-        kind: string;
-        nextPageToken: string;
-        pageInfo: {
-            resultsPerPage: number;
-            totalResults: number
-        };
-        regionCode: string;
     }
 }

@@ -1,12 +1,8 @@
 import React from 'react'
 import VideoItem from './VideoItem/VideoItem';
-import type { Video } from "../../models"
+import Video from '../../models/Video';
+import VideoListProps from '../../models/VideoListProps';
 import "./VideoList.css";
-
-export interface VideoListProps {
-    videos: Video[],
-    onVideoSelect(video: Video): void
-}
 
 const VideoList = ({videos, onVideoSelect}: VideoListProps) => {
 
