@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import VideoItem from './VideoItem';
 import "./VideoList.css";
 import type { Video } from "../types"

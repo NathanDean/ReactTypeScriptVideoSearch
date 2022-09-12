@@ -1,5 +1,5 @@
-import * as React from "react";
-import * as he from "he";
+import React from "react";
+import he from "he";
 import "./VideoItem.css";
 
 const VideoItem = ({video, onVideoSelect}) => {

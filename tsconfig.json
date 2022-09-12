@@ -3,6 +3,7 @@
       "module": "es6",
       "jsx": "react",
       "outDir": "./dist/",
+      "allowSyntheticDefaultImports": true,
       "sourceMap": true,
       "strictNullChecks": true,
       "target": "es6",

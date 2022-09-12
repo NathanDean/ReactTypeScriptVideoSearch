@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { useState, useEffect } from "react";
 import { AxiosError } from "../../node_modules/axios/index";
 import SearchBar from "./SearchBar";
