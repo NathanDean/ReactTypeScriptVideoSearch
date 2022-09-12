@@ -1,6 +1,6 @@
 import React from 'react'
 import VideoItem from './VideoItem/VideoItem';
-import type { Video } from "../../types"
+import type { Video } from "../../models"
 import "./VideoList.css";
 
 export interface VideoListProps {

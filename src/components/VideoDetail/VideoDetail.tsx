@@ -1,6 +1,6 @@
 import React from "react";
 import he from "he";
-import type { Video } from "../../types";
+import type { Video } from "../../models";
 import "./VideoDetail.css";
 
 export interface VideoDetailProps {
