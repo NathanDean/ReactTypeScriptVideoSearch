@@ -1,9 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { AxiosError } from "../../node_modules/axios/index";
-import SearchBar from "./SearchBar";
-import VideoDetail from "./VideoDetail";
-import VideoList from "./VideoList";
+import SearchBar from "./SearchBar/SearchBar";
+import VideoDetail from "./VideoDetail/VideoDetail";
+import VideoList from "./VideoList/VideoList";
 import youtube from "../api/youtube";
 import type { Video, YouTubeResponse } from "../types";
 import "./App.css";

@@ -1,7 +1,7 @@
 import React from 'react'
-import VideoItem from './VideoItem';
+import VideoItem from './VideoItem/VideoItem';
+import type { Video } from "../../types"
 import "./VideoList.css";
-import type { Video } from "../types"
 
 const VideoList = ({videos, onVideoSelect}) => {
 
