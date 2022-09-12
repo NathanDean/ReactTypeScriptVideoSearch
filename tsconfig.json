@@ -6,8 +6,8 @@
       "sourceMap": true,
       "strictNullChecks": true,
       "target": "es6",
-      "allowJs": true
-
+      "allowJs": true,
+      "types": ["react/next", "react-dom/next"]
   },
   "include": [
       "./src/"
