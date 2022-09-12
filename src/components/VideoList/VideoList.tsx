@@ -1,7 +1,14 @@
-import React from 'react'
-import VideoItem from './VideoItem/VideoItem';
-import Video from '../../models/Video';
-import VideoListProps from '../../models/VideoListProps';
+// React
+import React from "react";
+
+// Components
+import VideoItem from "./VideoItem/VideoItem";
+import Video from "../../models/Video";
+
+// Types
+import VideoListProps from "../../models/VideoListProps";
+
+// Styling
 import "./VideoList.css";
 
 const VideoList = ({videos, onVideoSelect}: VideoListProps) => {

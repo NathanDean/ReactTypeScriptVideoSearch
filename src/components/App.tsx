@@ -1,12 +1,21 @@
+// React
 import React from "react";
 import { useState, useEffect } from "react";
+
+// Components
 import SearchBar from "./SearchBar/SearchBar";
 import VideoDetail from "./VideoDetail/VideoDetail";
 import VideoList from "./VideoList/VideoList";
+
+// API
 import youtube from "../api/youtube";
+
+// Types
 import type { AxiosError } from "../../node_modules/axios/index";
 import Video from "../models/Video";
 import YouTubeResponse from "../models/YouTubeResponse";
+
+// Styling
 import "./App.css";
 
 const App = () => {

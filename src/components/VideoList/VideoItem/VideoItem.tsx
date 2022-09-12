@@ -1,7 +1,13 @@
+// React
 import React from "react";
+
+// Other third-party packages
 import he from "he";
-import Video from "../../../models/Video";
+
+// Components
 import VideoItemProps from "../../../models/VideoItemProps";
+
+// Styling
 import "./VideoItem.css";
 
 const VideoItem = ({video, onVideoSelect}: VideoItemProps) => {

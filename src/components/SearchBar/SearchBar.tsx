@@ -1,6 +1,11 @@
+// React
 import React from "react";
 import { useState } from "react";
+
+// Types
 import SearchBarProps from "../../models/SearchBarProps";
+
+// Styling
 import "./SearchBar.css"
 
 const SearchBar = ({onSearchSubmit}: SearchBarProps) => {

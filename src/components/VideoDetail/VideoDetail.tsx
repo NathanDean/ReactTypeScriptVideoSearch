@@ -1,6 +1,13 @@
+// React
 import React from "react";
+
+// Other third-party packages
 import he from "he";
+
+// Types
 import VideoDetailProps from "../../models/VideoDetailProps";
+
+// Styling
 import "./VideoDetail.css";
 
 const VideoDetail = ({video}: VideoDetailProps) => {
