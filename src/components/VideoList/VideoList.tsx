@@ -1,9 +1,9 @@
 import React from 'react'
 import VideoItem from './VideoItem/VideoItem';
-import type { Video } from "../../types"
+import type { Video, VideoListProps } from "../../types"
 import "./VideoList.css";
 
-const VideoList = ({videos, onVideoSelect}) => {
+const VideoList = ({videos, onVideoSelect}: VideoListProps) => {
 
     const renderedList = videos.map((video: Video) => {
         return <VideoItem

@@ -1,8 +1,11 @@
 import React from "react";
 import he from "he";
+import type { VideoDetailProps } from "../../types";
 import "./VideoDetail.css";
 
-const VideoDetail = ({video}) => {
+
+
+const VideoDetail = ({video}: VideoDetailProps) => {
 
     const videoSrc = (
         video !== null ? `https://www.youtube.com/embed/${video.id.videoId}` 

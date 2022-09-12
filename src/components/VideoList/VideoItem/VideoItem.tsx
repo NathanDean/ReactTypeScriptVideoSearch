@@ -1,8 +1,9 @@
 import React from "react";
 import he from "he";
+import { VideoItemProps } from "../../../types";
 import "./VideoItem.css";
 
-const VideoItem = ({video, onVideoSelect}) => {
+const VideoItem = ({video, onVideoSelect}: VideoItemProps) => {
 
     return(
 

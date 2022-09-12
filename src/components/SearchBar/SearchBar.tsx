@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from "react";
+import type { SearchBarProps } from "../../types";
 import "./SearchBar.css"
 
-const SearchBar = ({onSearchSubmit}) => {
+const SearchBar = ({onSearchSubmit}: SearchBarProps) => {
 
     const [query, setQuery] = useState<string>("");
 
